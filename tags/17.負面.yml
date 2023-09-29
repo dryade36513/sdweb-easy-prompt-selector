@@ -1,0 +1,24 @@
+﻿負面提示:
+ NSFW: nsfw,logo,text
+ embeddings: badhandv4,EasyNegative,ng_deepnegative_v1_75t,rev2-badprompt,verybadimagenegative_v1.3,negative_hand-neg,bad-picture-chill-75v
+ 變異手指: mutated hands and fingers
+ 畸形的: deformed
+ 解剖不良: bad anatomy
+ 毀容: disfigured
+ 臉不好: poorly drawn face
+ 變異的: mutated
+ 多余肢體: extra limb
+ 丑陋: ugly
+ 手畫得差: poorly drawn hands
+ 缺少的肢體: missing limb
+ 漂浮的四肢: floating limbs
+ 肢體不連貫: disconnected limbs
+ 畸形的手: malformed hands
+ 脫離焦點: out of focus
+ 長頸: long neck
+ 身體長: long body
+ 全選: nsfw,logo,text,badhandv4,EasyNegative,ng_deepnegative_v1_75t,rev2-badprompt,verybadimagenegative_v1.3,negative_hand-neg,mutated hands and fingers,poorly drawn face,extra limb,missing limb,disconnected limbs,malformed hands,ugly
+
+
+
+
