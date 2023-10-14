@@ -1,11 +1,15 @@
-﻿起手式:
+起手式:
  插畫風起手式: masterpiece, illustration,best quality,delicate details,refined rendering,hand by Guido Daniele
  CG風起手式: extremely detailed CG unity 8k wallpaper,realistic,hand by Guido Daniele
  半身特寫起手式: professional photography, 85mm lens, front view, halfbody shot, photograhpy, sharp focus, HD, 8k
  畫質好起手式: ((masterpiece)),((bestquality)),8k,high detailed,ultra-detailed, depth of field
  攝影風起手式: ((masterpiece)),((bestquality)),8k,high detailed,ultra-detailed, depth of field,photography,award winning,documentary,Original Photo,Realisticity
  人物可加的咒語: handsome face, beautiful face, real skin texture,well-proportioned hands
-対象:
+ 每張不同面孔男: ((different face features for each pictures:1.45)),((different boy for each picture:1.45)),
+ 每張不同面孔女: ((different face features for each pictures:1.45)),((different girl for each picture:1.45)),
+對象:
+ 正常男: 1boy,solo,male focus,handsome face,real skin texture,well-proportioned hands,good shape legs,
+ 正常女: 1girl,solo,female focus,beautiful face,real skin texture,well-proportioned hands,good shape legs,
  單人: solo
  女性: female
  男性: male
@@ -156,3 +160,5 @@
  腹部有斑點: Spotted belly
  腹部有雀斑: Freckled stomach
  吃太飽腹部緊繃: Tight belly
+特別範例:
+ 新一裸體: ((masterpiece)),((bestquality)),2.5D,CGI anime,fantasy portrait,colourful 3D,animation style,game CG,PBR render,depth of field,anime style,comic style,extremely detailed CG unity 8k wallpaper,illustration,hand by Guido Daniele,1boy,male focus,slim,<lora:shinichi:1>,handsome face,Well-Proportioned Hands,Real Skin Texture,White Marble Glowing Skin,thick eyebrows,(different face features:1.35),<lora:muscle_slider_v1:-0.65>,<lora:weight_slider_v2:-0.5>,(nude:1.45),fine penis,fine testicles,male pulic hair,{@08.人物_表情:笑系列@|@08.人物_表情:鄙視系@|@08.人物_表情:其他系@},(@09.人物_動作姿勢:手臂動作@),(@09.人物_動作姿勢:手部動作@),(@09.人物_動作姿勢:整體@),(@09.人物_動作姿勢:日常姿勢2@),{cinematic lighting|Soft illuminaotion},in the studio,Cinematic Shot,(simple background:1.3),
