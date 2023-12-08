@@ -1,0 +1,249 @@
+﻿職業: 
+ 救生員: lifeguard
+ 拳擊手: boxer
+ 科學家: scientist
+ 運動員: athletes
+ 職場女性: office lady 
+ 和尚: monk
+ 雜技演員: crobat
+ 修女: nun
+ 護士: nurse
+ 空姐: stewardess
+ 學生: student
+ 女服務員: waitress
+ 老師: teacher
+ 賽車手: racer
+ 警察: police
+ 士兵: soldier
+ 啦啦隊: cheerleader
+ 男演員: actor
+ 女演員: actress
+ 間諜: spy
+ 特工: agent
+ 刺客: assassin
+ 詩人: poet
+ 日本武士: samurai
+ 舞女: dancing girl 
+ 摩托車手: motorcyclist
+ 黑客: hacker
+ 魔術師: magician
+ 偵探: detective
+ 人偶: doll
+ 女仆: maid
+ 飛行員: pilot
+ 潛水員: diver
+ 酒吧審查員: bar censor 
+ 傳教士: missionary
+ 消防員: firefighter
+ 守門員: goalkeeper
+ 廚師: chef
+ 宇航員: astronaut
+ 收銀員: cashier
+ 郵遞員: mailman
+ 咖啡師: barista
+ 隱士: the hermit 
+ 牧羊人: makihitsuji
+男性職業A:
+ 工程師: Male Engineer
+ 醫生: Male Doctor
+ 律師: Male Lawyer
+ 建築師: Male Architect
+ 程式設計師: Male Software Developer
+ 教練: Male Coach
+ 消防員: Male Firefighter
+ 警察: Male Police Officer
+ 駕駛員: Male Driver
+ 廚師: Male Chef
+ 經理: Male Manager
+ 銷售員: Male Salesman
+ 機械師: Male Mechanic
+ 企業家: Male Entrepreneur
+ 教師: Male Teacher
+ 貨運司機: Male Truck Driver
+ 建築工人: Male Construction Worker
+ 會計師: Male Accountant
+ 牙醫: Male Dentist
+ 軍人: Male Soldier
+ 作家: Male Writer
+ 攝影師: Male Photographer
+ 農民: Male Farmer
+ 飛行員: Male Pilot
+ 木匠: Male Carpenter
+ 電工: Male Electrician
+ 音樂家: Male Musician
+ 畫家: Male Painter
+ 廣告專員: Male Advertising Specialist
+ 體育員: Male Athlete
+ 園丁: Male Gardener
+ 船長: Male Captain
+ 物理學家: Male Physicist
+ 數學家: Male Mathematician
+ 銀行家: Male Banker
+ 政治家: Male Politician
+ 製片人: Male Producer
+ 實業家: Male Businessman
+ 演員: Male Actor
+ 舞者: Male Dancer
+ 士兵: Male Soldier
+ 電子工程師: Male Electrical Engineer
+ 投資者: Male Investor
+ 漁民: Male Fisherman
+ 社工: Male Social Worker
+ 地質學家: Male Geologist
+ 金融分析師: Male Financial Analyst
+ 研究員: Male Researcher
+ 指揮家: Male Conductor
+ 擊劍手: Male Fencer
+男性職業B:
+ 商人: Male Merchant
+ 藥劑師: Male Pharmacist
+ 編輯: Male Editor
+ 航海家: Male Navigator
+ 牛仔: Male Cowboy
+ 歷史學家: Male Historian
+ 理髮師: Male Barber
+ 焊工: Male Welder
+ 助理: Male Assistant
+ 管理顧問: Male Management Consultant
+ 節目主持人: Male TV Host
+ 科學家: Male Scientist
+ 程序師: Male Programmer
+ 公關專員: Male PR Specialist
+ 專案經理: Male Project Manager
+ 工地監工: Male Construction Supervisor
+ 廣播員: Male Broadcaster
+ 飯店經理: Male Hotel Manager
+ 法官: Male Judge
+ 精算師: Male Actuary
+ 醫療技術員: Male Medical Technician
+ 行銷專員: Male Marketing Specialist
+ 保鑣: Male Bodyguard
+ 心理學家: Male Psychologist
+ 消費者行為學家: Male Consumer Behaviorist
+ 作曲家: Male Composer
+ 培訓師: Male Trainer
+ 視覺藝術家: Male Visual Artist
+ 看門人: Male Doorman
+ 統計學家: Male Statistician
+ 動物訓練師: Male Animal Trainer
+ 導演: Male Director
+ 地圖製作師: Male Cartographer
+ 保安人員: Male Security Guard
+ 室內設計師: Male Interior Designer
+ 汽車修理工: Male Auto Mechanic
+ 網球選手: Male Tennis Player
+ 音響技術員: Male Sound Technician
+ 經紀人: Male Agent
+ 大提琴手: Male Cellist
+ 法律顧問: Male Legal Advisor
+ 美食評論家: Male Food Critic
+ 通訊技術員: Male Communication Technician
+ 航太工程師: Male Aerospace Engineer
+ 體育記者: Male Sports Journalist
+ 咖啡師: Male Barista
+ 旅行代理商: Male Travel Agent
+ 訓練師: Male Instructor
+ 工具操作員: Male Machine Operator
+ 物理治療師: Male Physical Therapist
+女性職業A:
+ 老師: Female Teacher
+ 護士: Female Nurse
+ 秘書: Female Secretary
+ 藝人: Female Artist
+ 售貨員: Female Salesperson
+ 髮型師: Female Hairdresser
+ 廚師: Female Chef
+ 客服代表: Female Customer Service Representative
+ 設計師: Female Designer
+ 編輯: Female Editor
+ 保姆: Female Nanny
+ 藥劑師: Female Pharmacist
+ 律師: Female Lawyer
+ 記者: Female Journalist
+ 攝影師: Female Photographer
+ 空姐: Female Flight Attendant
+ 會計師: Female Accountant
+ 社工: Female Social Worker
+ 美容師: Female Beautician
+ 翻譯: Female Translator
+ 行政助理: Female Administrative Assistant
+ 營養師: Female Nutritionist
+ 舞者: Female Dancer
+ 寫手: Female Writer
+ 牙醫: Female Dentist
+ 主持人: Female Host
+ 導遊: Female Tour Guide
+ 講師: Female Instructor
+ 瑜伽教練: Female Yoga Instructor
+ 童謠教師: Female Nursery Teacher
+ 研究員: Female Researcher
+ 作家: Female Author
+ 銀行行員: Female Bank Teller
+ 服裝設計師: Female Fashion Designer
+ 花店店員: Female Florist
+ 美甲師: Female Nail Technician
+ 製片人: Female Producer
+ 美容顧問: Female Beauty Consultant
+ 健身教練: Female Fitness Trainer
+ 資訊專員: Female Information Officer
+ 室內設計師: Female Interior Designer
+ 聲樂老師: Female Vocal Teacher
+ 視覺藝術家: Female Visual Artist
+ 營業員: Female Sales Representative
+ 寵物美容師: Female Pet Groomer
+ 音樂老師: Female Music Teacher
+ 人資專員: Female HR Specialist
+ 廣告專員: Female Advertising Specialist
+ 活動策劃: Female Event Planner
+ 醫生: Female Doctor
+女性職業B:
+ 舞蹈老師: Female Dance Teacher
+ 保險經紀: Female Insurance Agent
+ 網頁設計師: Female Web Designer
+ 飛行員: Female Pilot
+ 芭蕾舞者: Female Ballet Dancer
+ 心理學家: Female Psychologist
+ 圖書館員: Female Librarian
+ 音樂家: Female Musician
+ 生物學家: Female Biologist
+ 獸醫: Female Veterinarian
+ 廣播員: Female Broadcaster
+ 雜誌編輯: Female Magazine Editor
+ 烘焙師: Female Baker
+ 企業家: Female Entrepreneur
+ 治療師: Female Therapist
+ 咖啡師: Female Barista
+ 教練: Female Coach
+ 助產士: Female Midwife
+ 調酒師: Female Bartender
+ 農夫: Female Farmer
+ 專案經理: Female Project Manager
+ 物理治療師: Female Physical Therapist
+ 廣告設計師: Female Ad Designer
+ 工程師: Female Engineer
+ 理療師: Female Therapist
+ 結構師: Female Architect
+ 寫作家: Female Playwright
+ 演員: Female Actor
+ 高爾夫球手: Female Golfer
+ 美容院店長: Female Beauty Salon Manager
+ 科學家: Female Scientist
+ 微生物學家: Female Microbiologist
+ 育嬰師: Female Childcare Worker
+ 馬術選手: Female Equestrian
+ 作曲家: Female Composer
+ 市場營銷專員: Female Marketing Specialist
+ 經濟學家: Female Economist
+ 政治家: Female Politician
+ 美術老師: Female Art Teacher
+ 金融分析師: Female Financial Analyst
+ 教育顧問: Female Educational Consultant
+ 皮膚科醫生: Female Dermatologist
+ 廣告文案: Female Copywriter
+ 語言學家: Female Linguist
+ 操作員: Female Operator
+ 政策分析師: Female Policy Analyst
+ 品酒師: Female Sommelier
+ 行銷經理: Female Marketing Manager
+ 舞蹈編排: Female Choreographer
+ 工業設計師: Female Industrial Designer
