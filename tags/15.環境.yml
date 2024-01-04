@@ -122,3 +122,15 @@
  魔法環: magic circles
  熒光蘑菇森林: fluorescent mushroom forests background
  彩色泡泡: (((colorful bubble)))
+純背景:
+ 黑色背景: black_background
+ 白色背景: white_background
+ 透明背景: transparent_background
+ 米色背景: beige_background
+ 棕色背景: brown_background
+ 棕褐色背景: tan_background
+ 灰色背景: grey_background
+ 漸變的背景: gradient_background
+ 多彩的背景: multicolored_background
+ 彩虹背景: rainbow_background
+ 抽象背景: abstract_background
