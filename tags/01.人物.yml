@@ -97,6 +97,19 @@
  肌肉: muscular
  細腰: narrow waist
  大屁股: wide hips
+手指甲:
+ 手指甲: fingernails
+ 腳趾甲: toenails
+ 指甲油: nail_polish
+ 腳趾甲油: toenail_polish
+ 黑指甲: black_nails
+ 紅指甲: red_nails
+ 粉色指甲: pink_nails
+ 長指甲: long_fingernails
+ 釘子|指甲: nail
+ 多彩指甲: multicolored_nails
+ 美甲: nail_art
+ 棕色馬甲: brown_vest
 胸:
   男性胸部:
     男平胸: flat chest
