@@ -43,7 +43,7 @@
  咖啡師: barista
  隱士: the hermit 
  牧羊人: makihitsuji
-男性職業A:
+男性職業:
  工程師: Male Engineer
  醫生: Male Doctor
  律師: Male Lawyer
@@ -94,7 +94,6 @@
  研究員: Male Researcher
  指揮家: Male Conductor
  擊劍手: Male Fencer
-男性職業B:
  商人: Male Merchant
  藥劑師: Male Pharmacist
  編輯: Male Editor
@@ -145,7 +144,7 @@
  訓練師: Male Instructor
  工具操作員: Male Machine Operator
  物理治療師: Male Physical Therapist
-女性職業A:
+女性職業:
  老師: Female Teacher
  護士: Female Nurse
  秘書: Female Secretary
@@ -196,7 +195,6 @@
  廣告專員: Female Advertising Specialist
  活動策劃: Female Event Planner
  醫生: Female Doctor
-女性職業B:
  舞蹈老師: Female Dance Teacher
  保險經紀: Female Insurance Agent
  網頁設計師: Female Web Designer
@@ -247,3 +245,4 @@
  行銷經理: Female Marketing Manager
  舞蹈編排: Female Choreographer
  工業設計師: Female Industrial Designer
+
