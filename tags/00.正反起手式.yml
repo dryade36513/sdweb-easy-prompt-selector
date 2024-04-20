@@ -10,6 +10,11 @@
  超級漫畫風: colorful and vibrant scene in manga style with high-energy and detailed elements, The image should capture the iconic essence of Japanese comic style, The main subject of the image should be a group of characters engaged in an action-packed scene, Each character should have distinct features, including expressive eyes, dynamic poses, and exaggerated facial expressions, The characters' clothes should reflect the manga style, with bold and vibrant colors, The background should be lively and visually appealing, with attention to small details, The scene should convey a sense of excitement and energy, drawing inspiration from classic manga illustrations, (best quality:1.35),8k,highres,(masterpiece:1.41),ultra-detailed,vivid colors, bokeh, Manga, Japanese comic style,Bright, vibrant, and bold colors that are characteristic of manga illustrations,Vibrant and dynamic lighting that enhances the energy and atmosphere of the scene,
  二次元起手式A: (Hyper quality:1.32),(masterpiece:1.21),illustration,best quality,delicate details,refined rendering,(Guido Daniele:1.33),comic,(Japan Anime style:1.21),(Menga style:1.21),(Toon style:1.33),Colorful,
  品質超好咒: (((HDR,UHD,8K,best quality,masterpiece,Insane Details))),
+<<<<<<< Updated upstream
+ 基本品質保證咒: ((((masterpiece, best quality, Ultra Details)))),
+=======
+ 品直棒棒咒: (((best quality,masterpiece,Ultra Details))),
+>>>>>>> Stashed changes
 哞哞起手式:
  插畫風起手式: masterpiece, illustration,best quality,delicate details,refined rendering,hand by Guido Daniele,
  CG風起手式: extremely detailed CG unity 8k wallpaper,realistic,hand by Guido Daniele
@@ -28,6 +33,17 @@
  一般物件反咒: worst quality, normal quality, low quality, low res, blurry, text, watermark, logo, banner, extra digits, cropped, jpeg artifacts, signature, username, error, sketch ,duplicate, ugly, monochrome, horror, geometry, mutation, disgusting,
  動畫人物反咒: bad anatomy, bad hands, three hands, three legs, bad arms, missing legs, missing arms, poorly drawn face, bad face, fused face, cloned face, worst face, three crus, extra crus, fused crus, worst feet, three feet, fused feet, fused thigh, three thigh, fused thigh, extra thigh, worst thigh, missing fingers, extra fingers, ugly fingers, long fingers, horn, realistic photo, extra eyes, huge eyes, 2girl, amputation, disconnected limbs,
  寫實人物反咒: bad anatomy, bad hands, three hands, three legs, bad arms, missing legs, missing arms, poorly drawn face, bad face, fused face, cloned face, worst face, three crus, extra crus, fused crus, worst feet, three feet, fused feet, fused thigh, three thigh, fused thigh, extra thigh, worst thigh, missing fingers, extra fingers, ugly fingers, long fingers, horn, extra eyes, huge eyes, 2girl, amputation, disconnected limbs, cartoon, cg, 3d, unreal, animate,
+<<<<<<< Updated upstream
+哞哞工作用:
+ 網劇畫人起手式: people,lineart,(detailed face, detailed eyes, detailed hair:1.33),(Anime style, Toon style:1.215),(perfect anime quality, amazing quality, masterpiece, black eyes, Ultra Details:1.421),modern,<lora:add_detail:1>,<lora:MooMooLineArts:2>,
+ 網劇畫男起手式: 1boy,male focus,lineart,(solid eyes, detailed eyes, detailed hair:1.33),(Anime style, Toon style:1.215),(perfect anime quality, amazing quality, masterpiece, Ultra Details, black eyes, :1.431),modern,<lora:add_detail:1>,<lora:MooMooLineArts:2>,
+ 網劇畫女起手式: 1girl,lineart,(beautiful detailed face, beautiful detailed eyes, detailed hair:1.33),(Anime style, Toon style:1.215),(perfect anime quality, amazing quality, masterpiece, Ultra Details, black eyes:1.421),modern,<lora:add_detail:1>,<lora:MooMooLineArts:2>,
+哞哞工作用反咒:
+ 畫女返咒: ((((badIrisNeg)))),((1boy,man,male)),bad-hands-5,EasyNegativeV2,(((worst quality, low quality))),
+ 畫男反咒: ((((badIrisNeg)))),((1girl,woman,female)),bad-hands-5,EasyNegativeV2,(((worst quality, low quality))), 
+ 一般反咒: badIrisNeg,Bad artist -neg,EasyNegativeV2,bad-hands-5,
+=======
+>>>>>>> Stashed changes
 反向提示詞起手式:
  通用反咒: (depth of field, bokeh, blurry:1.4),Sketch,ng deepnegative v1 75t,(worst quality, low quality:1.3),(simple background:1.3),(no extra limbs:1.1),(no blurred images:1.21),(no incorrect anatomy:1.21),(no poor art:1.21),(no low resolution:1.21),(no disfigured faces:1.21),(no distorted bodies:1.21),(no missing limbs:1.21),(no dismembered bodies:1.21),(no grotesque scenes:1.21),(no grim expressions:1.21),(no mutilated figures:1.21),(no blurry details:1.21),(no chaotic composition:1.21),(no disturbing elements:1.21),(no poor perspective:1.21),(no bad proportions:1.21),(no unnatural colors:1.21),(no unrealistic lighting:1.21),(no excessive violence:1.21),(no mutilated hands:1.21),(no disfigured faces:1.21),(no dark and gloomy atmosphere:1.21),(no dismembered limbs:1.21),(no excessive blood:1.21),(no horrific scenes:1.21),(no graphic injuries:1.21),(no disturbing imagery:1.21),(no traumatized children:1.21),(no traumatized animals:1.21),
  基本負向起手: worst quality, normal quality, low quality, low res, blurry, text, watermark, logo, banner, extra digits, cropped, jpeg artifacts, signature, username, error, sketch ,duplicate, ugly, monochrome, horror, geometry, mutation, disgusting
