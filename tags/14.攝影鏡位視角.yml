@@ -9,6 +9,21 @@
  長時間曝光: Long exposure
  定時攝影: Chrono photography
  光畫: Light graffiti
+鏡頭遠近(搭配LORA):
+ (-7): <lora:zoom_slider_v1:-7>,
+ (-6): <lora:zoom_slider_v1:-6>,
+ (-5): <lora:zoom_slider_v1:-5>,
+ (-4): <lora:zoom_slider_v1:-4>,
+ (-3): <lora:zoom_slider_v1:-3>,
+ (-2): <lora:zoom_slider_v1:-2>,
+ (-1): <lora:zoom_slider_v1:-1>,
+ (1): <lora:zoom_slider_v1:1>,
+ (2): <lora:zoom_slider_v1:2>,
+ (3): <lora:zoom_slider_v1:3>,
+ (4): <lora:zoom_slider_v1:4>,
+ (5): <lora:zoom_slider_v1:5>,
+ (6): <lora:zoom_slider_v1:6>,
+ (7): <lora:zoom_slider_v1:7>,
 景深光圈:
  景深: Depth of field (DOF)
  移軸: Tilt-shift photography
