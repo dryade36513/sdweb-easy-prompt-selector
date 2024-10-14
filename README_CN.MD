@@ -14,153 +14,159 @@
 
 </div>
 
-sd-webui-prompt-all-in-one is an extension based on [stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) that aims to improve the user experience of the prompt/negative prompt input box. It has a more intuitive and powerful input interface, provides automatic translation, history and collection functions, and supports multiple languages to meet the needs of different users.
+sd-webui-prompt-all-in-one 是一个基于 [stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) 的扩展，旨在提高提示词/反向提示词输入框的使用体验。它拥有更直观、强大的输入界面功能，它提供了自动翻译、历史记录和收藏等功能，它支持多种语言，满足不同用户的需求。
 
 ---
 
 <div align="center">
 
-### Installation tutorial, detailed feature introduction, usage instructions, frequently asked questions, and more can be found in the [Wiki](https://aiodoc.physton.com/).
+### 安装教程、功能详解、使用方法、常见问题等等，详见：[文档](https://aiodoc.physton.com/zh-CN/)。
 
 </div>
 
 ----
 
-**📢📢📢 This project has developed an independent standalone version that can run without relying on stable-diffusion-webui. It is lightweight and compact, focusing on editing and organizing prompt words. Visit [Physton/sd-webui-prompt-all-in-one-app](https://github.com/Physton/sd-webui-prompt-all-in-one-app) for the tutorial on how to use it.**
+**📢📢📢 本项目已开发独立运行版本，不依赖 stable-diffusion-webui 既可运行。轻便小巧，专注于提示词的编辑和整理。前往 [Physton/sd-webui-prompt-all-in-one-app](https://github.com/Physton/sd-webui-prompt-all-in-one-app) 查看使用教程。**
 
 ----
 
-> If you find this extension helpful, please give me a star on Github!
-> You could also buy me a coffee: [donate](#donate)
+> 如果你觉得这个扩展有帮助，请在Github上给我一颗星！
+> 你也可以请我喝杯咖啡: [donate](#捐赠)
 
 ----
 
-## Translation API Description
+> 中国用户镜像地址：[https://gitee.com/physton/sd-webui-prompt-all-in-one.git](https://gitee.com/physton/sd-webui-prompt-all-in-one.git)
 
-1. `API Key Not Required`: They are highly unstable and not every API can be used on your computer. If the translation fails, please try switching to another API. ⚠️⚠️⚠️ **Do not submit an issue!**
-2. `API KEY Required`: You need to apply for an API KEY on your own. The application methods for different interfaces will appear after switching to the corresponding interface. ⚠️⚠️⚠️ **Most of them are `free`!**
-3. `Offline Translation`: During initialization, automatic download of language models is required. If your network environment is poor, it may not be able to complete the automatic download and initialization.
+----
 
-## [Wiki](https://aiodoc.physton.com/)
+## 翻译API说明
 
-- [Installation](https://aiodoc.physton.com/Installation.html)
-- [Extension update description](https://aiodoc.physton.com/ExtensionUpdateDescription.html)
-- [Translation API Description](https://aiodoc.physton.com/TranslationApiConfiguration.html#translation-api-description)
-- [Contributing](https://aiodoc.physton.com/Contributing.html)
-- [Custom Theme](https://aiodoc.physton.com/Contributing.html#custom-theme)
-- [FAQ](https://aiodoc.physton.com/FAQ.html)
-- [Buy me a coffee](#buy-me-a-coffee)
+1. `不需要API KEY`：它们非常不稳定，并不是每个API都能在你的电脑中使用。如果翻译失败，请尝试切换其他API，⚠️⚠️⚠️**不要提交issue！**
+2. `需要API KEY`：需要自行申请API KEY。不同接口的申请方法，在切换到对应接口后，会出现对应的申请教程。⚠️⚠️⚠️**它们大部分都是 `免费` 的！**
+3. `离线翻译`：在初始化时需要自动下载语言模型。如果你的网络环境不好，可能无法完成自动下载并初始化。
 
-## Language support
+## [文档](https://aiodoc.physton.com/zh-CN/)
 
-Translation supports almost all national languages, but the UI interface of most countries will be displayed in English. If you need localized language display, you can translate and submit a PR.
+- [安装](https://aiodoc.physton.com/zh-CN/Installation.html)
+- [扩展更新说明](https://aiodoc.physton.com/zh-CN/ExtensionUpdateDescription.html)
+- [翻译接口说明](https://aiodoc.physton.com/zh-CN/TranslationApiConfiguration.html#翻译接口说明)
+- [帮助开发](https://aiodoc.physton.com/zh-CN/Contributing.html)
+- [自定义主题](https://aiodoc.physton.com/zh-CN/Contributing.html#自定义主题)
+- [常见问题](https://aiodoc.physton.com/zh-CN/FAQ.html)
+- [请我喝杯咖啡](#请我喝杯咖啡)
+
+## 语言支持
+
+支持几乎所有国家语言的翻译，但大部分国家的UI界面会显示为英文，如果需要本地化语言显，你可以翻译后提交PR。
 
 <details>
-<summary>UI Supported languages</summary>
+<summary>UI支持的语言</summary>
 
 `简体中文` `繁體中文` `English` ` Русский` `日本語` `한국어` ` Français` `Deutsch` ` Español` `Português` `Italiano` `العربية`
 </details>
 
 <details>
-<summary>Translation Supported languages</summary>
+<summary>翻译支持的语言</summary>
 
 `简体中文 (中国)` `繁體中文 (中國香港)` `繁体中文 (中國台灣)` `English (US)` `Afrikaans (South Africa)` `Shqip (Shqipëria)` `አማርኛ (ኢትዮጵያ)` `العربية (السعودية)` `Հայերեն (Հայաստան)` `অসমীয়া (ভাৰত)` `Azərbaycan dili (Latın, Azərbaycan)` `বাংলা (বাংলাদেশ)` `Башҡорт (Россия)` `Euskara (Espainia)` `Bosanski (Latinski, Bosna i Hercegovina)` `Български (България)` `Català (Espanya)` `Hrvatski (Hrvatska)` `Čeština (Česká republika)` `Dansk (Danmark)` `درى (افغانستان)` `ދިވެހިބަސް (ދިވެހިރާއްޖެ)` `Nederlands (Nederland)` `Eesti (Eesti)` `Føroyskt (Føroyar)` `vosa Vakaviti (Viti)` `Filipino (Pilipinas)` `Suomi (Suomi)` `Français (France)` `Français (Canada)` `Galego (España)` `ქართული (საქართველო)` `Deutsch (Deutschland)` `Ελληνικά (Ελλάδα)` `ગુજરાતી (ભારત)` `Kreyòl ayisyen (Ayiti)` `עברית (ישראל)` `हिन्दी (भारत)` `Hmong Daw (Latn, United States)` `Magyar (Magyarország)` `Íslenska (Ísland)` `Bahasa Indonesia (Indonesia)` `Inuktitut (Kanatami)` `Inuktitut (Latin, Canada)` `ᐃᓄᒃᑎᑐᑦ (ᑲᓇᑕᒥ)` `Gaeilge (Éire)` `Italiano (Italia)` `日本語 (日本)` `ಕನ್ನಡ (ಭಾರತ)` `Қазақ (Қазақстан)` `ភាសាខ្មែរ (កម្ពុជា)` `Klingon (Latn)` `Klingon (plqaD)` `한국어 (대한민국)` `کوردی (عێراق)` `Kurmancî (Latînî, Tirkiye)` `Кыргызча (Кыргызстан)` `ລາວ (ລາວ)` `Latviešu (Latvija)` `Lietuvių (Lietuva)` `Македонски (Северна Македонија)` `Malagasy (Madagasikara)` `Bahasa Melayu (Latin, Malaysia)` `മലയാളം (ഇന്ത്യ)` `Malti (Malta)` `Māori (Aotearoa)` `मराठी (भारत)` `Монгол (Кирилл, Монгол улс)` `ᠮᠣᠩᠭᠣᠯ ᠤᠯᠤᠰ (ᠨᠢᠭᠡᠳᠦᠯ ᠤᠨᠤᠭ᠎ᠠ)` `မြန်မာ (မြန်မာ)` `नेपाली (नेपाल)` `Norsk bokmål (Norge)` `ଓଡ଼ିଆ (ଭାରତ)` `پښتو (افغانستان)` `فارسی (ایران)` `Polski (Polska)` `Português (Brasil)` `Português (Portugal)` `ਪੰਜਾਬੀ (ਗੁਰਮੁਖੀ, ਭਾਰਤ)` `Querétaro Otomi (Latn, México)` `Română (România)` `Русский (Россия)` `Samoan (Latn, Samoa)` `Српски (ћирилица, Србија)` `Srpski (latinica, Srbija)` `Slovenčina (Slovensko)` `Slovenščina (Slovenija)` `Soomaali (Soomaaliya)` `Español (España)` `Kiswahili (Kenya)` `Svenska (Sverige)` `Reo Tahiti (Polynésie française)` `தமிழ் (இந்தியா)` `Татарча (латин, Россия)` `తెలుగు (భారత)` `ไทย (ไทย)` `བོད་ཡིག (རྒྱ་གར།)` `ትግርኛ (ኢትዮጵያ)` `lea fakatonga (Tonga)` `Türkçe (Türkiye)` `Українська (Україна)` `اردو (پاکستان)` `ئۇيغۇرچە (ئۇيغۇرچە، جۇڭگو)` `O'zbekcha (Lotin, O'zbekiston)` `Tiếng Việt (Việt Nam)` `Cymraeg (Y Deyrnas Unedig)` `Yucatec Maya (México)` `isiZulu (iNingizimu Afrika)`
 </details>
 
-## Features
+## 特性
 
-- `Intuitive input interface` provides a more intuitive and powerful input interface, displaying bilingual prompt word comparisons for easy understanding.
-- `Automatic translation` automatically translates prompt words/reverse prompt words, supporting multiple languages.
-- `Dozens of translation services` with dozens of online translations and offline translation models.
-- `Multilingual support` supports translation for most languages spoken in the world, allowing you to input prompt words in any language.
-- `History records` automatically records when prompt words/reverse prompt words change.
-- `Favorites` allows you to quickly bookmark and batch bookmark your favorite prompt words/reverse prompt words.
-- `Quick adjustments` drag and adjust the position of prompt words, one-click increase or decrease the weight of prompt words, one-click delete, disable, translate, or bookmark, and more.
-- `Batch operations` select multiple prompt words/reverse prompt words in a box, one-click delete, translate, or bookmark, and more.
-- `ChatGPT` generates prompt words intelligently through ChatGPT.
-- `Prompt word blacklist` allows you to set a blacklist to automatically filter prompt words.
-- `One-click adding of prompt words` thousands of prompt words available, just a click away.
-- `Keyword highlighting` Lora, LyCORIS, Textual Inversion highlighting and detection.
-- `Customizable keyword colors` different types of keywords can be displayed in different custom colors.
-- `Custom themes` customize themes and extend styles.
-- `...` More features waiting for you to discover.
+- `直观的输入界面` 提供更直观、强大的输入界面功能，提示词双语对照显示，一目了然。
+- `自动翻译` 自动翻译提示词/反向提示词，支持多种语言。
+- `几十种翻译服务` 几十个在线翻译，还有离线翻译模型。
+- `多国语言` 支持世界上大部分国家语言的翻译，你可以使用任何语言输入提示词。
+- `历史记录` 当提示词/反向提示词发生变化时，自动记录。
+- `收藏夹` 一键收藏、批量收藏你喜欢的提示词/反向提示词。
+- `快速调整` 拖拽调整提示词位置，一键增减提示词权重，一键删除、一键禁用、一键翻译、一键收藏等等。
+- `批量操作` 框选多个提示词/反向提示词，一键删除、一键翻译、一键收藏等等。
+- `ChatGPT` 通过ChatGPT智能生成提示词。
+- `提示词黑名单` 设置黑名单，自动过滤提示词。
+- `一键添加提示词` 几千个提示词，点击即可使用。
+- `关键词高亮` Lora、LyCORIS、Textual Inversion 高亮和检测。
+- `关键词自定义颜色` 不同种类的关键词，可以自定义显示不同的颜色。
+- `自定义主题` 自定义主题，自定义扩展风格。
+- `......` 更多功能等你发现。
 
-## Demo
+## 演示
 
-- [Switch language](https://aiodoc.physton.com/LanguageSelection.html)
+- [切换语言](https://aiodoc.physton.com/zh-CN/LanguageSelection.html)
 
   ![](https://s1.imagehub.cc/images/2023/06/06/demo.switch_language.gif)
 
-- [Translation API settings](https://aiodoc.physton.com/TranslationApiConfiguration.html)
+- [翻译API设置](https://aiodoc.physton.com/zh-CN/TranslationApiConfiguration.html)
 
   ![](https://s1.imagehub.cc/images/2023/06/06/demo.translate_setting.gif)
 
-- [Show/Hide content](https://aiodoc.physton.com/OtherFeatures.html#show-collapse-the-extension-panel)
+- [显示/折叠内容](https://aiodoc.physton.com/zh-CN/OtherFeatures.html#显示-折叠扩展面板)
 
   ![](https://s1.imagehub.cc/images/2023/06/06/demo.fold.gif)
 
-- [Show/Hide the WebUI input box](https://aiodoc.physton.com/OtherFeatures.html#show-hide-the-webui-input-box)
+- [显示/隐藏WebUI输入框](https://aiodoc.physton.com/zh-CN/OtherFeatures.html#显示-隐藏webui输入框)
 
   ![](https://s1.imagehub.cc/images/2023/06/06/demo.show_input.gif)
 
-- [Automatic translation](https://aiodoc.physton.com/AutomaticTranslation.html)
+- [自动翻译](https://aiodoc.physton.com/zh-CN/AutomaticTranslation.html)
 
   ![](https://s1.imagehub.cc/images/2023/06/06/demo.auto_translate.gif)
 
-- [One-click translation](https://aiodoc.physton.com/BatchTranslation.html)
+- [一键翻译](https://aiodoc.physton.com/zh-CN/BatchTranslation.html)
 
   ![](https://s1.imagehub.cc/images/2023/06/06/demo.translate.gif)
 
-- [Elegant input](https://aiodoc.physton.com/KeywordInputBox.html)
+- [优雅的输入](https://aiodoc.physton.com/zh-CN/KeywordInputBox.html)
 
   ![](https://s1.imagehub.cc/images/2023/06/06/demo.elegant_input.gif)
 
-- [Quick adjustment](https://aiodoc.physton.com/ListOfKeywords.html)
+- [快速调整](https://aiodoc.physton.com/zh-CN/ListOfKeywords.html)
 
   ![](https://s1.imagehub.cc/images/2023/06/06/demo.quick_adjust.gif)
 
-- [Favorite and History](https://aiodoc.physton.com/History.html)
+- [收藏和历史记录](https://aiodoc.physton.com/zh-CN/History.html)
 
   ![](https://s1.imagehub.cc/images/2023/06/06/demo.history_favorite.gif)
 
-- [Use ChatGPT to Generate Prompts](https://aiodoc.physton.com/UsingChatgptToGeneratePrompts.html)
+- [使用ChatGPT生成Prompt](https://aiodoc.physton.com/zh-CN/UsingChatgptToGeneratePrompts.html)
 
   ![](https://s1.imagehub.cc/images/2023/06/06/demo.chatgpt.gif)
 
-- [Writing in WebUI input box](https://aiodoc.physton.com/WritingInWebUIInputBox.html)
+- [在WebUI的输入框中编写](https://aiodoc.physton.com/zh-CN/WritingInWebUIInputBox.html)
 
   ![](https://s1.imagehub.cc/images/2023/06/06/demo.writing_webui.gif)
 
-- Support for [a1111-sd-webui-tagcomplete](https://github.com/DominikDoom/a1111-sd-webui-tagcomplete)
+- 支持[a1111-sd-webui-tagcomplete](https://github.com/DominikDoom/a1111-sd-webui-tagcomplete)
 
   ![](https://s1.imagehub.cc/images/2023/06/06/demo.tagcomplete.gif)
 
-- [Highlighting and detection of Lora, LyCORIS, and Textual Inversion](https://aiodoc.physton.com/ListOfKeywords.html#highlight-keyword)
+- [Lora、LyCORIS、Textual Inversion 高亮和检测](https://aiodoc.physton.com/zh-CN/ListOfKeywords.html#高亮关键词)
 
   ![](https://s1.imagehub.cc/images/2023/06/06/demo.keyword_detection.gif)
 
-- [Format of Prompt](https://aiodoc.physton.com/FormatOfPrompts.html)
+- [Prompt提示词格式](https://aiodoc.physton.com/zh-CN/FormatOfPrompts.html)
 
   ![](https://s1.imagehub.cc/images/2023/06/06/demo.prompt_format.gif)
 
-- [Batch operation](https://aiodoc.physton.com/BatchTranslation.html)
+- [批量操作](https://aiodoc.physton.com/zh-CN/BatchOperation.html)
 
   ![](https://s1.imagehub.cc/images/2023/06/06/demo.batch_operation.gif)
 
-- [Custom Theme / Extension styles](https://aiodoc.physton.com/ThemeStyle.html)
+- [自定义主题/扩展风格](https://aiodoc.physton.com/zh-CN/ThemeStyle.html)
 
   ![](https://s1.imagehub.cc/images/2023/06/06/demo.custom_theme.gif)
 
-- [One-Click Keyword Addition](https://aiodoc.physton.com/GroupTags.html)
+- [一键添加关键词](https://aiodoc.physton.com/zh-CN/GroupTags.html)
 
   ![](https://s1.imagehub.cc/images/2023/08/15/demo.group_tags.gif)
 
-## Donate
+## 捐赠
 
-[Donation list](https://aiodoc.physton.com/Donate.html)
+[捐赠列表](https://aiodoc.physton.com/zh-CN/Donate.html)
 
-### Buy me a coffee
+### 请我喝杯咖啡
 
+> 留言可能无法回复，如有问题请联系QQ：94126162或邮箱：pyhston@163.com。
+>
 | ko-fi (EN) | [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/physton) |
 |:-----------:| :----: |
 | Paypal (EN) | [https://paypal.me/physton](https://paypal.me/physton) |
