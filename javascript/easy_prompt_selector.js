@@ -36,7 +36,7 @@ class EPSElementBuilder {
 
   // Elements
   static openButton({ onClick }) {
-    const button = EPSElementBuilder.baseButton('🐄哞哞提示慈🐄', { size: 'sm', color: 'secondary' })
+    const button = EPSElementBuilder.baseButton('精選繪圖提示詞', { size: 'sm', color: 'secondary' })
     button.classList.add('easy_prompt_selector_button')
     button.addEventListener('click', onClick)
 
@@ -118,6 +118,7 @@ class EasyPromptSelector {
   SELECT_ID = 'easy-prompt-selector-select'
   CONTENT_ID = 'easy-prompt-selector-content'
   TO_NEGATIVE_PROMPT_ID = 'easy-prompt-selector-to-negative-prompt'
+  ADD_TAG_API = '/easy_prompt_selector/add_tag'
 
   constructor(yaml, gradioApp) {
     this.yaml = yaml
@@ -152,14 +153,23 @@ class EasyPromptSelector {
     const text = await this.readFile(this.PATH_FILE);
     if (text === '') { return {} }
 
-    const paths = text.split(/\r\n|\n/)
+    const paths = text.split(/\r\n|\n/).filter((p) => p.trim() !== '')
 
     const tags = {}
+    const usedKeys = new Set()
     for (const path of paths) {
-      const filename = path.split('/').pop().split('.').slice(0, -1).join('.')
-      const data = await this.readFile(path)
+      const normalized = path.replace(/\\/g, '/')
+      const stem = normalized.split('/').pop().split('.').slice(0, -1).join('.')
+      let key = stem
+      let n = 2
+      while (usedKeys.has(key)) {
+        key = `${stem}__${n}`
+        n += 1
+      }
+      usedKeys.add(key)
+      const data = await this.readFile(normalized)
       yaml.loadAll(data, function (doc) {
-        tags[filename] = doc
+        tags[key] = doc
       })
     }
 
@@ -191,8 +201,130 @@ class EasyPromptSelector {
 
     container.appendChild(row)
     container.appendChild(this.renderContent())
+    container.appendChild(this.renderAddTagPanel())
 
     return container
+  }
+
+  renderAddTagPanel() {
+    const wrap = document.createElement('div')
+    wrap.style.cssText = 'display:flex;flex-direction:column;gap:8px;width:100%;margin-top:10px'
+
+    const toggleBtn = EPSElementBuilder.baseButton('新增提示詞到 YML', { size: 'sm', color: 'primary' })
+    toggleBtn.type = 'button'
+    toggleBtn.setAttribute('aria-expanded', 'false')
+    toggleBtn.style.alignSelf = 'flex-start'
+
+    const formBody = document.createElement('div')
+    formBody.style.cssText = 'display:none;flex-direction:column;gap:8px;width:100%;padding:8px;border:1px solid var(--block-border-color,#374151);border-radius:var(--block-radius,8px);'
+
+    const inputStyle = 'color:var(--body-text-color);background:var(--input-background-fill);border:1px solid var(--block-border-color);border-radius:var(--block-radius);padding:6px 8px;width:100%;box-sizing:border-box'
+
+    const fileSelect = document.createElement('select')
+    fileSelect.classList.add('gr-box', 'gr-input')
+    fileSelect.style.cssText = inputStyle
+    Object.keys(this.tags).forEach((k) => {
+      const o = document.createElement('option')
+      o.value = k
+      o.textContent = k
+      fileSelect.appendChild(o)
+    })
+
+    const sectionInput = document.createElement('input')
+    sectionInput.type = 'text'
+    sectionInput.placeholder = '區塊路徑（選填，巢狀用 : 分隔）例：一般起手咒 或 Pony起手式:Ponyㄐㄐ小魔咒'
+    sectionInput.classList.add('gr-box', 'gr-input')
+    sectionInput.style.cssText = inputStyle
+
+    const nameInput = document.createElement('input')
+    nameInput.type = 'text'
+    nameInput.placeholder = '按鈕顯示名稱'
+    nameInput.classList.add('gr-box', 'gr-input')
+    nameInput.style.cssText = inputStyle
+
+    const promptTa = document.createElement('textarea')
+    promptTa.rows = 3
+    promptTa.placeholder = '提示詞內容（寫入後與所有 YML 比對是否重複）'
+    promptTa.classList.add('gr-box', 'gr-input')
+    promptTa.style.cssText = inputStyle + ';resize:vertical;min-height:3.5rem'
+
+    const btnRow = document.createElement('div')
+    btnRow.style.display = 'flex'
+    btnRow.style.alignItems = 'center'
+    btnRow.style.gap = '8px'
+    btnRow.style.flexWrap = 'wrap'
+
+    const saveBtn = EPSElementBuilder.baseButton('儲存到 YML', { size: 'sm', color: 'primary' })
+    const status = document.createElement('span')
+    status.style.cssText = 'font-size:12px;color:var(--body-text-color);flex:1;min-width:120px'
+
+    saveBtn.addEventListener('click', async () => {
+      status.textContent = '儲存中…'
+      try {
+        await this.postAddTagToYml({
+          fileStem: fileSelect.value,
+          sectionPath: sectionInput.value,
+          buttonTitle: nameInput.value,
+          promptText: promptTa.value
+        })
+        status.textContent = '已儲存，已重新載入列表'
+        nameInput.value = ''
+        promptTa.value = ''
+        const rb = gradioApp().getElementById('easy_prompt_selector_reload_button')
+        if (rb) {
+          rb.click()
+        }
+      } catch (e) {
+        status.textContent = e.message || String(e)
+      }
+    })
+
+    btnRow.appendChild(saveBtn)
+    btnRow.appendChild(status)
+
+    formBody.appendChild(fileSelect)
+    formBody.appendChild(sectionInput)
+    formBody.appendChild(nameInput)
+    formBody.appendChild(promptTa)
+    formBody.appendChild(btnRow)
+
+    let expanded = false
+    toggleBtn.addEventListener('click', () => {
+      expanded = !expanded
+      toggleBtn.setAttribute('aria-expanded', expanded ? 'true' : 'false')
+      formBody.style.display = expanded ? 'flex' : 'none'
+    })
+
+    wrap.appendChild(toggleBtn)
+    wrap.appendChild(formBody)
+
+    return wrap
+  }
+
+  async postAddTagToYml({ fileStem, sectionPath, buttonTitle, promptText }) {
+    const res = await fetch(this.ADD_TAG_API, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      credentials: 'same-origin',
+      body: JSON.stringify({
+        file_stem: fileStem,
+        section_path: (sectionPath || '').trim() || null,
+        button_title: buttonTitle,
+        prompt_text: promptText,
+        create_missing: true
+      })
+    })
+    let data = {}
+    try {
+      data = await res.json()
+    } catch (_) { /* ignore */ }
+    if (!res.ok) {
+      const d = data.detail
+      const msg = typeof d === 'string'
+        ? d
+        : (Array.isArray(d) ? d.map((x) => x.msg || JSON.stringify(x)).join(' ') : res.statusText)
+      throw new Error(msg || '請求失敗')
+    }
   }
 
   renderDropdown() {
@@ -236,30 +368,44 @@ class EasyPromptSelector {
   }
 
   renderTagButtons(tags, prefix = '') {
-    if (Array.isArray(tags)) {
-      return tags.map((tag) => this.renderTagButton(tag, tag, 'secondary'))
-    } else {
-      return Object.keys(tags).map((key) => {
-        const values = tags[key]
-        const randomKey = `${prefix}:${key}`
-
-        if (typeof values === 'string') { return this.renderTagButton(key, values, 'secondary') }
-
-        const fields = EPSElementBuilder.tagFields()
-        fields.style.flexDirection = 'column'
-
-        fields.append(this.renderTagButton(key, `@${randomKey}@`))
-
-        const buttons = EPSElementBuilder.tagFields()
-        buttons.id = 'buttons'
-        fields.append(buttons)
-        this.renderTagButtons(values, randomKey).forEach((button) => {
-          buttons.appendChild(button)
-        })
-
-        return fields
-      })
+    if (tags == null) {
+      return []
     }
+    if (Array.isArray(tags)) {
+      return tags
+        .filter((tag) => tag != null)
+        .map((tag) => this.renderTagButton(String(tag), String(tag), 'secondary'))
+    }
+    if (typeof tags !== 'object') {
+      return []
+    }
+    return Object.keys(tags).flatMap((key) => {
+      const values = tags[key]
+      const randomKey = `${prefix}:${key}`
+
+      if (typeof values === 'string') {
+        return [this.renderTagButton(key, values, 'secondary')]
+      }
+      if (values == null) {
+        return []
+      }
+      if (typeof values !== 'object') {
+        return [this.renderTagButton(key, String(values), 'secondary')]
+      }
+
+      const fields = EPSElementBuilder.tagFields()
+      fields.style.flexDirection = 'column'
+
+      fields.append(this.renderTagButton(key, `@${randomKey}@`))
+
+      const buttons = EPSElementBuilder.tagFields()
+      fields.append(buttons)
+      this.renderTagButtons(values, randomKey).forEach((button) => {
+        buttons.appendChild(button)
+      })
+
+      return [fields]
+    })
   }
 
   renderTagButton(title, value, color = 'primary') {

@@ -19,9 +19,14 @@ def tag_files():
 def load_tags():
     tags = {}
     for filepath in tag_files():
-        with open(filepath, "r", encoding="utf-8") as file:
-            yml = yaml.safe_load(file)
-            tags[filepath.stem] = yml
+        try:
+            with open(filepath, "r", encoding="utf-8") as file:
+                yml = yaml.safe_load(file)
+                tags[filepath.stem] = yml
+        except yaml.YAMLError as e:
+            print(f"[EasyPromptSelector] YAML parse error: {filepath}: {e}")
+        except OSError as e:
+            print(f"[EasyPromptSelector] Failed to read tag file: {filepath}: {e}")
 
     return tags
 

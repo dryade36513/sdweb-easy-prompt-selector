@@ -1,4 +1,18 @@
-Pony的Clip要設定為2:
+Pony正向起手式:
+  起始模板1: 1boy, male focus, best quality, amazing quality, best aesthetic, absurdres
+  起始模板2: 2boys, male focus, multiple boys, best quality, amazing quality, best aesthetic, absurdres
+  基礎好好Pony咒: (score_9, score_8_up, score_7_up, score_6_up, score_5_up, score_4_up),
+  品質棒棒Pony起手: (score_9, score_8_up, score_7_up),
+  基礎美感解頗學好咒: (source anime, best quality, best aesthetic, perfect anatomy)
+  老子不愛肌肉猛男咒反咒: (pony,gaping,muscular,strong,body horror,mutant)
+  水啦起手咒: (score_9, score_8_up, score_7_up, source anime, best aesthetic, perfect anatomy),
+  NSFW男男咒: score_9,score_8_up,score_7_up,1boy,solo,yaoi,bara,male focus,very nsfw,uncersored,highres,best quality,amazing quality,best aesthetic,absurdres,
+  3D Pony起手: (score_9, score_8_up, score_7_up, best aesthetic, perfect anatomy,source_cartoon,3d,CG,Octane Render),1boy,solo,male focus,portrait,((@08.表情:隨機表情@,@13.光源:哞之光@,@15.環境:SD場景環境@,detailed background)),
+Pony負向起手式:
+  品質夭壽走開反咒: (score_6, score_5, score_4),
+  反女反咒: Long hair, Shirt decals, shirt designs, hoodie decals, hoodie design, clothing design, text, words, logo, Facial hair, buff, muscle, muscular, deformed eyes, ugly face, ugly eyes, bad anatomy, wrong anatomy, low quality, extra limbs, extra fingers, extra digits, asymmetrical eyes, female, woman, girl, feminine, womanly, feminine, eyeliner, eyelashes, feminine eyelashes, feminine eyeliner, female body, feminine body, curvy body, curvy hips, big hips, breasts, female breasts, big breasts, large breasts, duplicate, text, logo, (bad and mutated hands:1.3), (worst quality:2.0), (low quality:2.0), (blurry:2.0), geometry, bad_prompt, (bad hands:1.2), (missing fingers:1.2), (multiple limbs:1.2), bad anatomy, (interlocked fingers:1.5), (Ugly Fingers:1.5), (extra digit and hands and fingers and legs and arms:1.4), crown braid, ((2girl)), (deformed fingers:1.5), (long fingers:1.2),
+  重口味反咒: lowres, bad, text, error, missing, extra, fewer, cropped, jpeg artifacts, worst quality, bad quality, watermark, bad aesthetic, unfinished, chromatic aberration, scan, scan artifacts
+  光反咒: lowres, jpeg artifacts, worst quality, watermark, blurry, bad aesthetic
   基本品質負向起手1: worst quality, normal quality, low quality, low res, blurry, text, watermark, logo, banner, extra digits, cropped, jpeg artifacts, signature, username, error, sketch ,duplicate, ugly, monochrome, horror, geometry, mutation, disgusting
   寫實角色負向起手1: bad anatomy, bad hands, three hands, three legs, bad arms, missing legs, missing arms, poorly drawn face, bad face, fused face, cloned face, worst face, three crus, extra crus, fused crus, worst feet, three feet, fused feet, fused thigh, three thigh, fused thigh, extra thigh, worst thigh, missing fingers, extra fingers, ugly fingers, long fingers, horn, extra eyes, huge eyes, amputation, disconnected limbs, cartoon, cg, 3d, unreal, animate,
   描繪城市時反咒: animals, asymmetrical buildings, blurry, cars, close-up, creepy, deformed structures, grainy, jpeg artifacts, low contrast, low quality, lowres, macro, multiple angles, multiple views, overexposed, oversaturated, people, pets, plain background, scary, solid background, surreal, underexposed, unreal architecture, unreal sky, weird colors
@@ -13,21 +27,16 @@ Pony的Clip要設定為2:
   小清新反咒: Sketch,aid210,bad-hands-5,bad-picture-chill-75v,bad_pictures,bad_prompt_version2-neg,badquality-neg,ng_deepnegative_v1_75t,epiCNegative,fcNeg-neg,EasyNegative,EasyNegativeV2,By bad artist -neg,Unspeakable-Horrors-Composition-4v,verybadimagenegative_v1.3,ugly_face,ugly_hands,ugly_man,ugly_woman,disconnected limbs,extra limb,extra arms,mutated hands,malformed hands,mutated hands and fingers,poorly drawn hands,disconnected limbs,malformed hands,
   輕鬆小反咒: Ugly,Morbid,Extra fingers,Poorly drawn hands,Mutation,Blurry,Extra limbs,Gross proportions,Missing arms,Mutated hands,Long neck,Duplicate,Mutilated,Mutilated hands
   崁入式加原生反咒: bad-hands-5,bad-picture-chill-75v,bad_pictures,bad_prompt_version2-neg,badquality-neg,By bad artist -neg_2,EasyNegative,easynegative_2,verybadimagenegative_v1.3,Blurry,grainy,poorly drawn hands,poorly drawn face,out of frame,low contrast,underexposed,overexposed,bad anatomy,watermark,signature,cut off,Ugly,Morbid,Extra fingers,Poorly drawn hands,Mutation,Blurry,Extra limbs,Gross proportions,Missing arms,Mutated hands,Long neck,Duplicate,Mutilated,Mutilated hands,
-  起始模板1: 1boy, male focus, (anything else you'd like to describe), best quality, amazing quality, best aesthetic, absurdres
-  起始模板2: 2boys, male focus, multiple boys, (anything else you'd like to describe), best quality, amazing quality, best aesthetic, absurdres
-  基礎好好Pony咒: (score_9, score_8_up, score_7_up, score_6_up, score_5_up, score_4_up),
-  品質棒棒Pony起手: (score_9, score_8_up, score_7_up),
-  品質夭壽走開反咒: (score_6, score_5, score_4),
-  基礎美感解頗學好咒: (source anime, best quality, best aesthetic, perfect anatomy)
-  老子不愛肌肉猛男咒反咒: (pony,gaping,muscular,strong,body horror,mutant)
-  水啦起手咒: (score_9, score_8_up, score_7_up, source anime, best aesthetic, perfect anatomy),
+  品質與解頗學: (score_6, score_5, score_4),worst quality,normal quality,low quality,low res,blurry,text,watermark,logo,banner,extra digits,cropped,jpeg artifacts,signature,username,error,sketch,duplicate,ugly,monochrome,horror,geometry,mutation,disgusting,bad anatomy,bad hands,three hands,three legs,bad arms,missing legs,missing arms,poorly drawn face,bad face,fused face,cloned face,worst face,three crus,extra crus,fused crus,worst feet,three feet,fused feet,fused thigh,three thigh,fused thigh,extra thigh,worst thigh,missing fingers,extra fingers,ugly fingers,long fingers,horn,extra eyes,huge eyes,amputation,disconnected limbs,
+  寫實人物去多人以及畫風綁定: two person, painting, drawing, anime, CGI, unreal engine, 3d, render, deformed iris, (worst quality:1.4), (low quality:1.4), (monochrome:1.1)
+  卡通為主Pony反正完整版: (score_6, score_5, score_4, bad anatomy, realistic),unaestheticXL_3x3-neg,realnegative_ponyxl-neg,PonyXL_NegScore,pony_negativeV2,NEGATIVE_HANDS,deep_negative_pony,ArtnWarPDXL,((worst quality,normal quality,low quality,low res)),blurry,text,watermark,logo,banner,extra digits,cropped,jpeg artifacts,signature,username,error,sketch,duplicate,ugly,monochrome,horror,geometry,mutation,disgusting,bad hands,three hands,three legs,bad arms,missing legs,missing arms,poorly drawn face,bad face,fused face,cloned face,worst face,three crus,extra crus,fused crus,worst feet,three feet,fused feet,fused thigh,three thigh,fused thigh,extra thigh,worst thigh,missing fingers,extra fingers,ugly fingers,long fingers,horn,extra eyes,huge eyes,amputation,disconnected limbs
 Ponyㄐㄐ小魔咒:
-  良好的人體解頗學: perfect anatomy, 
+  良好的人體解頗學: perfect anatomy,
   良好解頗學手部: anatomically correct hands,
   最佳美學: best aesthetic,
   最佳構圖: Art Composition,
   黃金比例: Gold Ratio,
-  有夠色: rating explicit, very NSFW,
+  有夠色: rating_explicit, very NSFW,
   GAY荒謬愛: absurdres,
   眼睛烏黑亮麗咒: Realistic eyes ,Beautiful eyes ,Highly-detailed eyes ,Perfect eyes ,Hazel eye ,Photorealistic eyes ,Brown eyes, black eyes,
   皮膚美妙咒: (realistic skin,pores,high detailed skin,ultra-detailed natural skin textures:1.35),
@@ -38,14 +47,46 @@ Ponyㄐㄐ小魔咒:
   安全: rating_safe,
   問號: rating_questionable,
   刺激喔: rating_explicit,
-哞風反咒:
-  一般物件反咒: worst quality, normal quality, low quality, low res, blurry, text, watermark, logo, banner, extra digits, cropped, jpeg artifacts, signature, username, error, sketch ,duplicate, ugly, monochrome, horror, geometry, mutation, disgusting,
-  動畫人物反咒: bad anatomy, bad hands, three hands, three legs, bad arms, missing legs, missing arms, poorly drawn face, bad face, fused face, cloned face, worst face, three crus, extra crus, fused crus, worst feet, three feet, fused feet, fused thigh, three thigh, fused thigh, extra thigh, worst thigh, missing fingers, extra fingers, ugly fingers, long fingers, horn, realistic photo, extra eyes, huge eyes, 2girl, amputation, disconnected limbs,
-  寫實人物反咒: bad anatomy, bad hands, three hands, three legs, bad arms, missing legs, missing arms, poorly drawn face, bad face, fused face, cloned face, worst face, three crus, extra crus, fused crus, worst feet, three feet, fused feet, fused thigh, three thigh, fused thigh, extra thigh, worst thigh, missing fingers, extra fingers, ugly fingers, long fingers, horn, extra eyes, huge eyes, 2girl, amputation, disconnected limbs, cartoon, cg, 3d, unreal, animate,
-  建議基礎咒: lowres, bad, text, error, missing, extra, fewer, cropped, jpeg artifacts, worst quality, bad quality, watermark, bad aesthetic, unfinished, chromatic aberration, scan, scan artifacts
-  漂漂反咒: EasyNegative, bad_prompt_version2, bad-hands-5, ng_deepnegative_v1_75t, (watermark:1.6), (text:1.4), (worst quality:2), (low quality:2), (normal quality:2), lowres, normal quality, (monochrome), (grayscale), skin spots, acnes, skin blemishes, age spot, (outdoor:1.6), manboobs, backlight,(ugly:1.331), (duplicate:1.331), (morbid:1.21), (mutilated:1.21), (tranny:1.331), mutated hands, (poorly drawn hands:1.331), blurry, (bad anatomy:1.21), (bad proportions:1.331), extra limbs, (disfigured:1.331), (more than 2 nipples:1.331), (missing arms:1.331), (extra legs:1.331), (fused fingers:1.61051), (too many fingers:1.61051), (unclear eyes:1.331), bad hands, missing fingers, extra digit, (futa:1.1), bad body, pubic hair, glans, (nipples:1.4), (nude:1.6),
-  NSFW反咒: lowres, text, extra penis, error, cropped, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, out of frame, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck, username, watermark, signature,
+SDXL通用起手咒:
+  基本起咒: best quality, masterpiece, ultra-detailed,
+  攝影棒棒起手咒: high quality photography, Canon EOS R3, photorealistic
+  美學起手咒: best quality,masterpiece,ultra-detailed,best aesthetic,high quality photography,Art Composition,Gold Ratio
+  畫面漂亮咒: awesome appearance, magical landscape with enchanted elements, fantasy art style, intricate details, ultra sharp, exquisite detail, flawless composition, vivid colors, masterpiece, exciting background
+  寫實照片咒: ((raw photo, photorealistic, masterpiece, best quality, hires, intricate details, reflections, photographed on a Canon EOS R5, 50mm lens, F/2.8, HDR, 8k resolution, ray-tracing)),
+  寫實時尚咒: (((best quality, masterpiece, ultra-detailed, high quality photography, Canon EOS R3, photorealistic, fashion photography, sweet, fashion pose, Glaring)))
+SDXL通用反咒:
+  基本反咒: worst quality, normal quality, low quality, low res, blurry, text, watermark, logo, banner, extra digits, cropped, jpeg artifacts, signature, username, error, sketch, duplicate, ugly, monochrome, horror, geometry, mutation, disgusting, extra penis, worst quality, low quality, jpeg artifacts, morbid, mutilated, out of frame, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, deformed, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck
+  無小孩確認寫實: child, nude, bad hands, bad anatomy, 2d, painting, drawing, ink, sketch, cartoon, comic, anime, manga, digital, 2.5, illustration,
 Adetailer修復咒:
   Detailer高清修復: (masterpiece),(best quality),8k,high detailed,ultra-detailed face, real skin texture,
   純Detailer: detailed face, detailed eyes, real skin texture,
+  Detailer反手: ugly_face,ugly_hands,ugly_man,ugly_woman,disconnected limbs,extra limb,extra arms,mutated hands,malformed hands,mutated hands and fingers,poorly drawn hands,disconnected limbs,malformed hands,
+一般起手咒:
+  基礎咒: best quality, amazing quality, best aesthetic, absurdres,
+  基礎小咒: 1boy, male focus, (anything else you'd like to describe), best quality, amazing quality, best aesthetic, absurdres
+  基礎兩男咒: 2boys, male focus, multiple boys, best quality, amazing quality, best aesthetic, absurdres
+  基礎女咒: 1girl, best quality, amazing quality, best aesthetic, absurdres
+  基礎兩女: 2girls, multiple girls, best quality, amazing quality, best aesthetic, absurdres
+負面提示:
+  NSFW: nsfw,logo,text
+  embeddings: badhandv4,EasyNegative,ng_deepnegative_v1_75t,rev2-badprompt,verybadimagenegative_v1.3,negative_hand-neg,bad-picture-chill-75v
+  變異手指: mutated hands and fingers
+  畸形的: deformed
+  解剖不良: bad anatomy
+  毀容: disfigured
+  臉不好: poorly drawn face
+  變異的: mutated
+  多余肢體: extra limb
+  丑陋: ugly
+  手畫得差: poorly drawn hands
+  缺少的肢體: missing limb
+  漂浮的四肢: floating limbs
+  肢體不連貫: disconnected limbs
+  畸形的手: malformed hands
+  脫離焦點: out of focus
+  長頸: long neck
+  身體長: long body
+  全選: nsfw,logo,text,badhandv4,EasyNegative,ng_deepnegative_v1_75t,rev2-badprompt,verybadimagenegative_v1.3,negative_hand-neg,mutated hands and fingers,poorly drawn face,extra limb,missing limb,disconnected limbs,malformed hands,ugly
+  負面新版簡易: Blur,DOF,sketch,((cluttered:1.45)),((split screen:1.25)),((kid:1.25),(((split:1.44))),aid210,2boys,(mutiple boys:1.25),bad-hands-5,bad-picture-chill-75v,bad_pictures,bad_prompt_version2-neg,badquality-neg,ng_deepnegative_v1_75t,epiCNegative,fcNeg-neg,EasyNegative,EasyNegativeV2,By bad artist -neg,Unspeakable-Horrors-Composition-4v,verybadimagenegative_v1.3,NSFW,(worst quality:2),(low quality:2),(normal quality:2),lowres,normal quality,((grayscale)),skin spots,acnes,skin blemishes,age spot,(ugly:1.331),(duplicate:1.331),(morbid:1.21),(mutilated:1.21),(tranny:1.331),mutated hands,(poorly drawn hands:1.5),blurry,(bad anatomy:1.21),(bad proportions:1.331),extra limbs,(disfigured:1.331),(missing arms:1.331),(extra legs:1.331),(fused fingers:1.61051),(too many fingers:1.61051),(unclear eyes:1.331),lowers,bad hands,missing fingers,extra digit,bad hands,missing fingers,(((extra arms and legs))),
+  反手咒: multiple_breasts, (mutated_hands_and_fingers:1.5), (long_body:1.3), (mutation, poorly_drawn:1.2), black-white, bad_anatomy, liquid_body, liquid_tongue, disfigured, malformed, mutated, anatomical_nonsense, text_font_ui, malformed_hands, long_neck,lowers, lowres, bad_anatomy, bad_proportions, uncoordinated_body, black-white, unnatural_body, fused_breasts, bad_breasts, huge_breasts, poorly_drawn_breasts, extra_breasts, liquid_breasts, heavy_breasts, missing_breasts, huge_haunch, huge_thighs, huge_calf, bad_hands, fused_hand, missing_hand, disappearing_arms, disappearing_thigh, disappearing_calf, disappearing_legs, fused_ears, bad_ears, poorly_drawn_ears, extra_ears, liquid_ears, heavy_ears, missing_ears, fused_animal_ears, bad_animal_ears, poorly_drawn_animal_ears, extra_animal_ears, liquid_animal_ears, heavy_animal_ears, missing_animal_ears, text, ui, error, missing_fingers, missing_limb, fused_fingers, one_hand_with_more_than_5_fingers, one_hand_with_less_than_5_fingers, one_hand_with_more_than_5_digit, one_hand_with_less_than_5_digit, extra_digit, fewer_digits, fused_digit, missing_digit, bad_digit, liquid_digit, colorful_tongue, black_tongue, cropped, jpeg_artifacts, signature, malformed_feet, extra_feet, bad_feet, poorly_drawn_feet, fused_feet, missing_feet, extra_shoes, bad_shoes, fused_shoes, more_than_two_shoes, poorly_drawn_shoes, bad_gloves, poorly_drawn_gloves, fused_gloves, bad_cum, poorly_drawn_cum, fused_cum, bad_hairs, poorly_drawn_hairs, fused_hairs, big_muscles, ugly, bad_face, fused_face, poorly_drawn_face, cloned_face, big_face, long_face, bad_eyes, fused_eyes_poorly_drawn_eyes, extra_eyes, malformed_limbs, more_than_2_nipples, missing_nipples, different_nipples, fused_nipples, bad_nipples, poorly_drawn_nipples, black_nipples, colorful_nipples, gross_proportions._short_arm, (missing_arms), missing_thighs, missing_calf, missing_legs, mutation, duplicate,mutilated, poorly_drawn_hands, more_than_1_left_hand, more_than_1_right_hand, deformed, disfigured, missing_legs, extra_arms, extra_thighs, more_than_2_thighs, extra_calf, fused_calf, extra_legs, bad_knee, extra_knee, more_than_2_legs, bad_tails, bad_mouth, fused_mouth, poorly_drawn_mouth, bad_tongue, long_tongue, black_tongue, big_mouth, cracked_mouth, bad_mouth,dirty_teeth, fused_pantie, poorly_drawn_pantie, fused_cloth, poorly_drawn_cloth, bad_pantie, yellow_teeth, thick_lips, bad_cameltoe, colorful_camelote, bad_asshole, poorly_drawn_asshole, fused_asshole, missing_asshole, bad_anus, bad_pussy, bad_crotch, bad_crotch_seam, fused_anus, poorly_drawn_pussy, fused_pussy, poorly_drawn_anus, fused_anus, fused_crotch, poorly_drawn_crotch, fused_seam, poorly_drawn_anus, poorly_drawn_crotch, poorly_drawn_crotch_seam, bad_thigh_gap, missing_thigh_gap, fused_thigh_gap, liquid_thigh_gap, poorly_drawn_thigh_gap, poorly_drawn_anus, bad_collarbone, fused_collarbone, missing_collarbone, liquid_collarbone, strong_girl, obesity, worst_quality, low_quality, normal_quality, bad_tentacles, poorly_drawn_tentacles, split_tentacles, fused_tentacles, missing_clit, bad_clit, fused_clit, colorful_clit, black_clit, liquid_clit, QR_code, bar_code, censored, safety_panties, safety_knickers, beard, furry, pony, pubic_hair, bar_censor,heart_censor,  mosaic,mosaic censoring,  excrement, futa, testis, (too_long_body:1.5), (too_long_upper_body:1.5), (ugly_body:1.2), (big_head:1.1), crooked_nipples, signature, username,
   Detailer反手: ugly_face,ugly_hands,ugly_man,ugly_woman,disconnected limbs,extra limb,extra arms,mutated hands,malformed hands,mutated hands and fingers,poorly drawn hands,disconnected limbs,malformed hands,
